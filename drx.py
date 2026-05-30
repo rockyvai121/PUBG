@@ -72,7 +72,7 @@ def genkey(m):
 @bot.message_handler(commands=['redeem'])
 def redeem(m):
     args = m.text.split()
-    if len(args) < 2: return bot.reply_to(m, "Usage: /redeem NSG-XXXX")
+    if len(args) < 2: return bot.reply_to(m, "Usage: /redeem DRX-XXXX")
     
     user_key = args[1]
     keys = load_data(KEYS_FILE)
